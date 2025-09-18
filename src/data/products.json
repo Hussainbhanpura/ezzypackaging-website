@@ -1,0 +1,160 @@
+[
+  {
+    "slug": "pink-pvc-plotter-film",
+    "title": "Pink PVC Plotter Film",
+    "image": "/images/pink_roll.jpeg",
+    "category": "Surface Protection",
+    "spec": "High-quality pink film with superior adhesion and easy removal.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "120 Micron Pink PVC",
+      "110 GSM Platinum - Coated Paper",
+      "Industrial Grade Adhesive"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Thickness": "120 micron",
+      "Release Paper": "110 GSM Platinum-Coated",
+      "Color": "Pink"
+    }
+  },
+  {
+    "slug": "c0-glass-etching-film",
+    "title": "C0 Glass Etching Film",
+    "image": "/images/white_roll.jpeg",
+    "category": "Glass Etching",
+    "spec": "Premium clear film for decorative and privacy applications.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "50 Micron Ultra Clear PVC",
+      "60 GSM Platinum - Coated Paper",
+      "Industrial Grade Adhesive"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Thickness": "50 micron",
+      "Release Paper": "60 GSM Platinum-Coated",
+      "Color": "Clear"
+    }
+  },
+  {
+    "slug": "c1-glass-etching-film",
+    "title": "C1 Glass Etching Film",
+    "image": "/images/white_roll.jpeg",
+    "category": "Glass Etching",
+    "spec": "Premium clear film for decorative and privacy applications.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "80 Micron Ultra Clear PVC",
+      "60 GSM Platinum - Coated Paper",
+      "Industrial Grade Adhesive"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Thickness": "80 micron",
+      "Release Paper": "60 GSM Platinum-Coated",
+      "Color": "Clear"
+    }
+  },
+  {
+    "slug": "c2-glass-etching-film",
+    "title": "C2 Glass Etching Film",
+    "image": "/images/white_roll.jpeg",
+    "category": "Glass Etching",
+    "spec": "Premium clear film for decorative and privacy applications.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "100 Micron Ultra Clear PVC",
+      "60 GSM Platinum - Coated Paper",
+      "Industrial Grade Adhesive"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Thickness": "100 micron",
+      "Release Paper": "60 GSM Platinum-Coated",
+      "Color": "Clear"
+    }
+  },
+  {
+    "slug": "g1-glass-etching-film",
+    "title": "G1 Glass Etching Film",
+    "image": "/images/green_roll.jpeg",
+    "category": "Glass Etching",
+    "spec": "Premium green film for decorative and privacy applications.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "80 Micron Ultra Clear Green PVC",
+      "60 GSM Platinum - Coated Paper",
+      "Industrial Grade Adhesive"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Thickness": "80 micron",
+      "Release Paper": "60 GSM Platinum-Coated",
+      "Color": "Green"
+    }
+  },
+  {
+    "slug": "g2-glass-etching-film",
+    "title": "G2 Glass Etching Film",
+    "image": "/images/green_roll.jpeg",
+    "category": "Glass Etching",
+    "spec": "Premium green film for decorative and privacy applications.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "100 Micron Ultra Clear Green PVC",
+      "60 GSM Platinum - Coated Paper",
+      "Industrial Grade Adhesive"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Thickness": "100 micron",
+      "Release Paper": "60 GSM Platinum-Coated",
+      "Color": "Green"
+    }
+  },
+  {
+    "slug": "m1-glass-backing-film",
+    "title": "M1 Glass Backing Film",
+    "image": "/images/white_roll.jpeg",
+    "category": "Premium Clear",
+    "spec": "Crystal clear film with superior optical clarity.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "80 Micron Milky White PVC",
+      "60 GSM Platinum - Coated Paper",
+      "Industrial Grade Adhesive"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Thickness": "80 micron",
+      "Release Paper": "60 GSM Platinum-Coated",
+      "Color": "Milky White"
+    }
+  },
+  {
+    "slug": "glass-protection-film",
+    "title": "Glass Protection Film",
+    "image": "/images/glass_protection.jpeg",
+    "category": "Premium Clear",
+    "spec": "Crystal clear film with superior optical clarity.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "Crystal Clear",
+      "Professional Grade",
+      "Long-Lasting"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Color": "Clear"
+    }
+  }
+]

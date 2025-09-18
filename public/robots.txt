@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ezzypackagingsolutions.com
+
+# Sitemaps
+Sitemap: https://ezzypackagingsolutions.com/sitemap.xml
