@@ -1,8 +1,6 @@
 const nextConfig = {
-  output: 'export',
   trailingSlash: true,
   images: {
-    unoptimized: true,
     remotePatterns: [
       { protocol: "https", hostname: "1.imimg.com" },
       { protocol: "https", hostname: "2.imimg.com" },
