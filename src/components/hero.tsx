@@ -85,7 +85,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden min-h-[80vh] lg:min-h-[90vh] flex items-center lg:pt-2">
+    <section className="relative overflow-hidden min-h-[72vh] lg:min-h-[78vh] xl:min-h-[85vh] flex items-center lg:pt-2">
       {/* Enhanced gradient background with stronger overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-primary/90 to-secondary">
         {/* Stronger dark overlay for maximum text contrast */}
@@ -120,26 +120,39 @@ export function Hero() {
       
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             {/* Left Content with enhanced contrast */}
             <motion.div 
-              className="space-y-6"
+              className="space-y-4"
               initial={{ opacity: 0, x: -30 }} 
               animate={{ opacity: 1, x: 0 }} 
               transition={{ duration: 0.6 }}
             > 
               {/* Main Title */}
               <motion.h1 
-                className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight"
+                className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.1] tracking-tight drop-shadow-md max-w-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
               >
-                <span className="text-white">India&#39;s Trusted</span>
-                <br />
-                <span className="bg-gradient-to-r from-yellow-400 to-accent bg-clip-text text-transparent">Glass Etching Sticker</span>
-                <br />
-                <span className="text-white">Manufacturer</span>
+                <span className="block text-white">India&#39;s Trusted</span>
+                <motion.span 
+                  className="block bg-gradient-to-r from-yellow-400 via-accent to-yellow-400 bg-clip-text text-transparent"
+                  style={{ backgroundSize: '200% 100%' }}
+                  animate={{ backgroundPosition: ['0% 0%', '100% 0%', '0% 0%'] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+                >
+                  Glass Etching Sticker
+                </motion.span>
+                <motion.span 
+                  className="block bg-gradient-to-r from-yellow-400 via-accent to-yellow-400 bg-clip-text text-transparent"
+                  style={{ backgroundSize: '200% 100%' }}
+                  animate={{ backgroundPosition: ['100% 0%', '0% 0%', '100% 0%'] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.3 }}
+                >
+                  Furniture Protection Film
+                </motion.span>
+                <span className="block text-white">Manufacturer</span>
               </motion.h1>
               
               {/* Subtitle with highlighted differentiator */}
@@ -147,7 +160,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
-                className="text-base sm:text-lg lg:text-xl text-white/95 leading-relaxed max-w-xl"
+                className="text-sm sm:text-base lg:text-lg text-white/95 leading-relaxed max-w-lg"
               >
                 Premium glass etching films and glass protection films. 
                 <span className="font-bold text-white"> 12+ years of excellence</span> serving leading glass designers pan India with unmatched quality.
@@ -158,24 +171,24 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
-                className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-1"
               >
                 {/* Primary CTA - Bright and prominent */}
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                  <Button asChild size="lg" className="bg-gradient-to-r from-yellow-400 to-accent hover:from-yellow-500 hover:to-accent/90 text-black px-6 sm:px-8 lg:px-10 py-4 sm:py-6 lg:py-7 text-sm sm:text-base font-black rounded-xl shadow-2xl hover:shadow-3xl transition-all group">
+                  <Button asChild size="lg" className="bg-gradient-to-r from-yellow-400 to-accent hover:from-yellow-500 hover:to-accent/90 text-black px-5 sm:px-7 lg:px-8 py-3 sm:py-4 lg:py-5 text-sm sm:text-sm font-black rounded-xl shadow-2xl hover:shadow-3xl transition-all group">
                     <Link href="/products" className="flex items-center gap-2">
-                      <IconSparkles size={22} />
+                      <IconSparkles size={18} />
                       EXPLORE PRODUCTS
-                      <IconArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                      <IconArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
                 </motion.div>
                 
                 {/* Secondary CTA - Outline style for hierarchy */}
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                  <Button asChild size="lg" variant="outline" className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white px-6 sm:px-8 lg:px-10 py-4 sm:py-6 lg:py-7 text-sm sm:text-base font-bold rounded-xl transition-all">
+                  <Button asChild size="lg" variant="outline" className="border-2 border-white/50 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 hover:border-white px-5 sm:px-7 lg:px-8 py-3 sm:py-4 lg:py-5 text-sm sm:text-sm font-bold rounded-xl transition-all">
                     <a href="tel:+919930775152" className="flex items-center gap-2">
-                      <IconPhone size={20} />
+                      <IconPhone size={18} />
                       <span>+91 9930775152</span>
                     </a>
                   </Button>
@@ -188,17 +201,17 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: statsInView ? 1 : 0, y: statsInView ? 0 : 20 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
-                className="flex flex-wrap items-center gap-4 sm:gap-6 pt-6"
+                className="flex flex-wrap items-center gap-3 sm:gap-4 pt-4"
               >
                 <motion.div 
                   className="flex items-center gap-3"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
-                    <IconShieldCheck size={24} className="text-yellow-400" />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+                    <IconShieldCheck size={20} className="text-yellow-400" />
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">
+                    <div className="text-lg sm:text-xl font-bold text-white">
                       <AnimatedCounter end={100} suffix="%" isInView={statsInView} />
                     </div>
                     <div className="text-xs text-white/90 font-medium">Quality Assured</div>
@@ -209,11 +222,11 @@ export function Hero() {
                   className="flex items-center gap-3"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
-                    <IconUsers size={24} className="text-yellow-400" />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+                    <IconUsers size={20} className="text-yellow-400" />
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">
+                    <div className="text-lg sm:text-xl font-bold text-white">
                       <AnimatedCounter end={2000} suffix="+" isInView={statsInView} />
                     </div>
                     <div className="text-xs text-white/90 font-medium">Happy Clients</div>
@@ -224,11 +237,11 @@ export function Hero() {
                   className="flex items-center gap-3"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
-                    <IconCalendar size={24} className="text-yellow-400" />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+                    <IconCalendar size={20} className="text-yellow-400" />
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">
+                    <div className="text-lg sm:text-xl font-bold text-white">
                       <AnimatedCounter end={12} suffix="+" isInView={statsInView} />
                     </div>
                     <div className="text-xs text-white/90 font-medium">Years Experience</div>
@@ -246,7 +259,7 @@ export function Hero() {
             >
               <div className="relative">
                 {/* Main Product Showcase - Cleaner with more spacing */}
-                <div className="relative h-[500px] w-full">
+                <div className="relative h-[420px] lg:h-[460px] xl:h-[520px] w-full">
                   {/* Product Carousel */}
                   <div className="relative h-full rounded-3xl overflow-hidden shadow-2xl bg-white/10 backdrop-blur-md border border-white/20">
                     {productSlides.map((slide, index) => (
@@ -281,7 +294,7 @@ export function Hero() {
                         
                         {/* Product Info */}
                         <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                          <h3 className="text-2xl font-bold text-white mb-2">{slide.title}</h3>
+                          <h3 className="text-xl font-bold text-white mb-2">{slide.title}</h3>
                           <p className="text-white/80 mb-4">{slide.subtitle}</p>
                           
                           {/* Features */}
@@ -331,7 +344,7 @@ export function Hero() {
                     initial={{ opacity: 0, scale: 0.8, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     transition={{ delay: 0.8, duration: 0.5 }}
-                    className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 bg-white rounded-xl p-5 shadow-2xl z-30"
+                    className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 bg-white rounded-xl p-5 shadow-2xl z-30"
                   >
                     <div className="grid grid-cols-3 gap-6 text-center">
                       <div>
@@ -371,6 +384,17 @@ export function Hero() {
             </motion.div>
           </div>
         </div>
+      </div>
+      {/* Scroll indicator */}
+      <div className="absolute left-6 bottom-6 hidden sm:flex items-center gap-3 text-white/80">
+        <div className="h-8 w-[2px] bg-white/30 relative overflow-hidden rounded-full">
+          <motion.span 
+            className="absolute top-0 left-0 h-8 w-[2px] bg-white"
+            animate={{ y: [-24, 24] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+          />
+        </div>
+        <span className="text-xs tracking-wider uppercase">Scroll</span>
       </div>
     </section>
   );
