@@ -21,6 +21,7 @@ import {
   IconBuildingFactory,
   IconCertificate,
   IconStar,
+  
   IconClock
 } from "@tabler/icons-react";
 
@@ -355,6 +356,14 @@ export default function Home() {
                 description: "Crystal clear film with superior optical clarity",
                 features: ["Crystal Clear", "Professional Grade", "Long-Lasting"],
                 color: "from-gray-400 to-gray-500"
+              },
+              {
+                title: "Furniture Protection Film",
+                image: "/images/Furniture_protection.jpg", 
+                category: "Surface Protection",
+                description: "48 cm × 500cm PVC material, waterproof, oil-proof, and easy to clean",
+                features: ["48 cm × 500cm PVC material", "Waterproof and oil-proof", "Easy to clean", "No marks when removed", "Suitable for furniture, walls, and surfaces"],
+                color: "from-blue-500 to-blue-600"
               }
             ].map((product, index) => (
               <motion.div

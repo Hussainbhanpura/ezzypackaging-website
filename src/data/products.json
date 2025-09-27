@@ -156,5 +156,29 @@
       "Material": "PVC",
       "Color": "Clear"
     }
+  },
+  {
+    "slug": "furniture-protection-film",
+    "title": "Furniture Protection Film",
+    "image": "/images/Furniture_protection.jpg",
+    "category": "Surface Protection",
+    "spec": "48 cm × 500cm PVC material, waterproof, oil-proof, and easy to clean. Cover your furniture or other items with a protective film.",
+    "price": "₹ On Request",
+    "priceUnit": "/Roll",
+    "features": [
+      "48 cm × 500cm PVC material",
+      "Waterproof and oil-proof",
+      "Easy to clean",
+      "No marks when removed",
+      "Suitable for furniture, walls, and surfaces"
+    ],
+    "specifications": {
+      "Material": "PVC",
+      "Dimensions": "48 cm × 500cm",
+      "Properties": "Waterproof, Oil-proof",
+      "Application": "Flat, smooth, dry surfaces",
+      "Compatibility": "Glass tables, metal, wood, tiles, kitchen walls, cabinets, tables, drawers, dining tables, wooden furniture",
+      "Color": "Clear"
+    }
   }
 ]

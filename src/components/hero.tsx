@@ -147,6 +147,14 @@ export function Hero() {
                 <motion.span 
                   className="block bg-gradient-to-r from-yellow-400 via-accent to-yellow-400 bg-clip-text text-transparent"
                   style={{ backgroundSize: '200% 100%' }}
+                  animate={{ backgroundPosition: ['0% 0%', '100% 0%', '0% 0%'] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.15 }}
+                >
+                  Glass Protection Film
+                </motion.span>
+                <motion.span 
+                  className="block bg-gradient-to-r from-yellow-400 via-accent to-yellow-400 bg-clip-text text-transparent"
+                  style={{ backgroundSize: '200% 100%' }}
                   animate={{ backgroundPosition: ['100% 0%', '0% 0%', '100% 0%'] }}
                   transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 0.3 }}
                 >
@@ -160,10 +168,11 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.6 }}
-                className="text-sm sm:text-base lg:text-lg text-white/95 leading-relaxed max-w-lg"
+                className="text-sm sm:text-base lg:text-lg text-white/95 leading-relaxed max-w-[60ch] text-balance drop-shadow-sm"
               >
-                Premium glass etching films and glass protection films. 
-                <span className="font-bold text-white"> 12+ years of excellence</span> serving leading glass designers pan India with unmatched quality.
+                Premium glass etching films, glass protection films, and furniture protection films. 
+                <span className="bg-white/10 text-white px-1 rounded font-semibold">12+ years of excellence</span> 
+                serving leading glass designers and interior designers pan India with unmatched quality.
               </motion.p>
               
               {/* Differentiated CTA Buttons */}
