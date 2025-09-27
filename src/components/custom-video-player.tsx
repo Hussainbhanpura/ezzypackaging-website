@@ -8,7 +8,6 @@ const YouTube = dynamic(() => import("react-youtube"), { ssr: false });
 
 interface CustomVideoPlayerProps {
   videoSrc: string;
-  posterImage?: string; // only useful if using self-hosted
   title?: string;
 }
 
@@ -20,9 +19,9 @@ type YTPlayer = {
   getPlayerState?: () => number;
 };
 
-export function CustomVideoPlayer({ videoSrc, posterImage, title }: CustomVideoPlayerProps) {
+export function CustomVideoPlayer({ videoSrc, title }: CustomVideoPlayerProps) {
   const playerRef = useRef<YTPlayer | null>(null);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const { ref: inViewRef, inView } = useInView({ threshold: 0.6 });
 
   const safePlay = () => {
@@ -40,28 +39,18 @@ export function CustomVideoPlayer({ videoSrc, posterImage, title }: CustomVideoP
   const attemptAutoplay = useCallback(() => {
     if (!playerRef.current) return;
     try {
-      playerRef.current.unMute?.();
-      setIsMuted(false);
+      playerRef.current.mute?.();
+      setIsMuted(true);
     } catch {}
     safePlay();
-    setTimeout(() => {
-      try {
-        const state = playerRef.current?.getPlayerState?.();
-        if (state !== 1) {
-          playerRef.current?.mute?.();
-          setIsMuted(true);
-          safePlay();
-        }
-      } catch {}
-    }, 600);
   }, []);
 
   const handleReady = (event: { target: YTPlayer }) => {
     playerRef.current = event.target;
     try {
-      // Default unmuted per requirement
-      event.target.unMute?.();
-      setIsMuted(false);
+      // Default muted per requirement
+      event.target.mute?.();
+      setIsMuted(true);
     } catch {}
     if (inView) {
       attemptAutoplay();

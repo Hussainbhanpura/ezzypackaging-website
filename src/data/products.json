@@ -174,10 +174,8 @@
     ],
     "specifications": {
       "Material": "PVC",
-      "Dimensions": "48 cm × 500cm",
-      "Properties": "Waterproof, Oil-proof",
-      "Application": "Flat, smooth, dry surfaces",
-      "Compatibility": "Glass tables, metal, wood, tiles, kitchen walls, cabinets, tables, drawers, dining tables, wooden furniture",
+      "Thickness": "48 cm × 500cm",
+      "Release Paper": "N/A",
       "Color": "Clear"
     }
   }

@@ -6,7 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { Hero } from "@/components/hero";
-import { YouTubeVideo } from "@/components/youtube-video";
 import { CustomVideoPlayer } from "@/components/custom-video-player";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -140,7 +139,6 @@ export default function Home() {
               >
                 <CustomVideoPlayer 
                   videoSrc="zzn1nehPTZY"
-                  posterImage="/images/logo.jpeg"
                   title="Factory Manufacturing Process"
                 />
               </motion.div>
